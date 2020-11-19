@@ -18,10 +18,13 @@ gauche et un sous arbre droit.
 Notre classe __Nœud__ disposera de 3 méthodes :
 * **est_feuille()** qui renvoie une Vrai si l'objet est une feuille, faux
 sinon
-* **creer_feuille_gauche()** qui permet de créer une feuille à gauche avec la
+* **creer_fils_gauche()** qui permet de créer sous-arbre à gauche avec la
 valeur passée en paramètre
-* **creer_feuille_droite()** qui permet de créer une feuille à droite avec la
+* **creer_fils_droite()** qui permet de créer sous-arbre à droite avec la
 valeur passée en paramètre
 
 Pour les exemples, on regardera les tests.
 
+La deuxième partie consiste à écrire le graphe correspondant à l'image
+ci-dessous :
+![](expr.png)
