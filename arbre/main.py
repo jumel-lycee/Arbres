@@ -4,7 +4,7 @@ class Noeud():
 
     """Voir la documentation de la classe dans le README"""
 
-    def __init(self):
+    def __init__(self):
         pass
 
     def __repr__(self):
