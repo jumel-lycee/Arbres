@@ -60,10 +60,4 @@ sous_arbre_gauche.cree_fils_gauche("D")
 racine.cree_fils_droit("C")
 
 arbre = Arbrebin(racine)
-arbre.show().render()
-
-### Votre Code ici
-racine = 
-expr = Arbrebin(racine)
-
-expr.show().render()
+arbre.show()
