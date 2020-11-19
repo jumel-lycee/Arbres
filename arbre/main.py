@@ -20,11 +20,11 @@ class Noeud():
             return False
 
     def cree_fils_gauche(self,valeur):
-        self.gauche = valeur
+        self.gauche = Noeud(valeur)
         return self.gauche
 
     def cree_fils_droit(self, valeur):
-        self.droit = valeur
+        self.droit = Noeud(valeur)
         return self.droit
 
 
@@ -67,4 +67,22 @@ sous_arbre_gauche.cree_fils_gauche("D")
 racine.cree_fils_droit("C")
 
 arbre = Arbrebin(racine)
-arbre.show()
+arbre.show().render()
+
+### Votre Code ici
+racine = Noeud("+")
+racine.cree_fils_droit(1)
+g = racine.cree_fils_gauche("-")
+gd = g.cree_fils_droit("^")
+gd.cree_fils_droit(2)
+gd.cree_fils_gauche(3)
+gg = g.cree_fils_gauche("*")
+gg.cree_fils_droit(2)
+ggg = gg.cree_fils_gauche("+")
+ggg.cree_fils_gauche(2)
+ggg.cree_fils_droit(4)
+
+expr = Arbrebin(racine)
+
+expr.show().render()
+
