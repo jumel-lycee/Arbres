@@ -5,20 +5,27 @@ class Noeud():
 
     """Voir la documentation de la classe dans le README"""
 
-    def __init__(self):
-        pass
+    def __init__(self, valeur):
+        self.valeur = valeur
+        self.droit = None
+        self.gauche = None
 
     def __repr__(self):
         return str(self.valeur)
 
     def est_feuille(self):
-        pass
+        if self.droit is None and self.gauche is None:
+            return True
+        else:
+            return False
 
     def cree_fils_gauche(self,valeur):
-        pass
+        self.gauche = valeur
+        return self.gauche
 
     def cree_fils_droit(self, valeur):
-        pass
+        self.droit = valeur
+        return self.droit
 
 
 class Arbrebin:
